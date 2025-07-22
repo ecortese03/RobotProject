@@ -30,13 +30,13 @@ void loop() {
     while (client.connected()) {
       if (client.available()) {
         Serial.println("Client Connected");
-        //String received = client.readStringUntil('\n');
-        //Serial.print("Received: ");
-        //Serial.println(received);
+        String received = client.readStringUntil('\n');
+        Serial.print("Received: ");
+        Serial.println(received);
 
         // Echo back
-        //client.print("Echo: ");
-        //client.println(received);
+        client.print("Echo: ");
+        client.println(received);
 
         //This will be where all the main logic occurs
 

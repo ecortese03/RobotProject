@@ -10,7 +10,7 @@ WiFiClient client;
 
 void setup() {
   Serial.begin(115200);
-
+  delay(1000);
   WiFi.begin(ssid, password);
   Serial.print("Connecting to ");
   Serial.println(ssid);
